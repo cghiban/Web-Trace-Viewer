@@ -20,7 +20,7 @@ Usage:
   Use the perl script from bin/extract_data.pl to extract data from the trace 
   file:
 
-    bin/extract_data.pl file > data_file.txt
+    bin/extract_data.pl file > html/data_file.txt
 
   Then open the html/index.html file and locate and replace this line
 
