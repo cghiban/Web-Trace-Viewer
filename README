@@ -1,0 +1,17 @@
+The contents of this file are subject to the terms listed in the LICENSE file
+you received with this code.
+
+Web Trace Viewer: 
+  http://gfx.dnalc.org/tmp/trace-viewer/html/
+  http://dnasubway.org/
+  http://www.iplantcollaborative.org/
+
+Authors: 
+  Mohammed A. Khalfan <mkhalfan@cshl.edu>
+  Cornel Ghiban <ghiban@cshl.edu>
+
+About:
+  This is a web-based trace/chromatogram viewer. It was created while building
+  the "blue line" in the DNA Subway (http://dnasubway.org/). It supports only 
+  AB1/ABI trace files.
+  Supported browsers: Firefox 3.5+, Safari 4+, Chrome, 4+, IE9+

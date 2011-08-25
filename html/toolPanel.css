@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body { height:100%; }
+
+#conbody {
+	width: 650px;
+	height:450px;
+	font-family: arial, hervetica, san-serif;
+}
+
+#title{
+	width: 410px;
+	height: auto;
+	padding: 8px 120px 10px 120px;
+	font-size: .95em;
+	color: #000066;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+
+.con_BL_infoText{
+	width: 590px;
+	height: auto; 
+	padding: 10px 30px 10px 30px;
+	color: #006699;
+	font-size: 0.8em;
+	text-align: left;
+	font-style: italic;
+	position: relative;
+	float: left;
+}
+.con_BL_subTitle{
+	width: 565px;
+	height: auto; 
+	padding: 10px 30px 4px 54px;
+	color: #3399CC;
+	font-size: 0.85em;
+	text-align: left;
+	font-weight: bold;
+	position: relative;
+	float: left;
+}
+
+.con_BL_box{
+	width: 630px;
+	height: auto;
+	padding: 4px 10px 10px 4px;
+	position: relative;
+	float: left;
+}
+
+
+.con_BL_menu_box{
+    width: 300px;
+	height: auto;
+	padding-left: 25px;
+	position: relative;
+	float:left;
+	}
+
+.con_BL_menu_box1 {
+    width: 300px;
+	height: 26px;
+	padding: 4px 0px 0px 0px;
+	position: relative;
+	float:left;
+	color: #006699;
+	font-size: 0.8em;
+	text-align: left;
+	}
+.con_BL_menu_box2 {
+    width: 300px;
+	height: auto;
+	padding: 4px 0px 4px 0px;
+	position: relative;
+	float:left;
+	color: #006699;
+	font-size: 0.8em;
+	text-align: left;
+	font-style: italic;
+	}
+.conStylized_input1 {
+	float:left;
+	padding: 2px;
+	border: .1em;
+	border-style: solid;
+	
+	width: 260px;
+	margin-bottom: 4px;
+	font-size:.8em; font-family: courier, monaco, monospace;
+}
+
+.conStylized_input2{
+	float:left;
+	border: .1em; 
+	border-style: solid; 
+	
+	color: #006699;  
+	width:260px;
+	font-size:.7em; font-family: courier, monaco, monospace;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-bottom: 4px;
+}
+
+.conStylized_input3 {
+	float:left;
+	border: .1em;
+	border-style: solid;
+	
+	width: 260px;
+	height: 20px;
+	margin-bottom: 4px;
+	font-size:.8em; font-family: courier, monaco, monospace;
+	
+}
+	
+.conNewPro_label{
+	width: 280px;
+	height: auto;
+	margin: 0px auto; 
+	padding-bottom: 4px;
+	color: #006699;
+	font-size: 0.9em;
+	text-align: left;
+	position: relative;
+	float: left;
+	}
+
+.conNewPro_label1{
+	width: 300px;
+	height: auto;
+	margin: 0px auto; 
+	padding-bottom: 4px;
+	color: #006699;
+	font-size: 0.9em;
+	text-align: left;
+	position: relative;
+	float: left;
+	}
+.conNewPro_label2{
+	width: 400px;
+	height: auto;
+	margin: 0px auto; 
+	padding-bottom: 4px;
+	color: #006699;
+	font-size: 0.9em;
+	text-align: left;
+	position: relative;
+	float: left;
+	}
+
+.clear_empty{
+	clear: both;
+	height: 30px;
+	width: 300px;
+}
+

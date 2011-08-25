@@ -1,0 +1,57 @@
+<!--
+  The contents of this file are subject to the terms listed in the LICENSE file
+  you received with this code.
+-->
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="toolPanel.css" />
+<script type="text/javascript" src="prototype-1.6.1.js"></script>
+<script type="text/javascript" src="phylogenetics.js"></script>
+</head>
+<body>
+
+<div class="container_data1">
+	<div id="container_data_line">&nbsp;</div>
+	
+	<div id="seqids" class="seqids">
+
+	</div>
+	
+	<div id="mini-trace-icons">
+	</div>
+	
+	<div id="seqsx" class="seqsx">
+	
+    <input type="hidden" id="step" value="2" />
+
+	<div id="trace-viewer">
+		<canvas id="canvas1" height="200">
+			Your browser doesn't support this Trace Viewer.
+		</canvas>
+
+		<div id="view-seqs-help-bubble" title="What is this line?" onclick="$('view-seqs-help-message').toggle()"></div>
+		<div id="view-seqs-help-message" style="display:none">Bars depict quality scores for each nucleotide detected (called). The line marks a quality score of 20; bars below that line indicate low quality calls. <a href="http://en.wikipedia.org/wiki/Phred_quality_score" target="blank">More...</a></div>
+
+	</div>
+
+	<div style="float:left; width: 100px;padding-left:10px;"><input type="button" id="zoom_reset" value=" Reset " onclick="phy.zoomReset()" class="bluebtn" /></div>
+	<div style="float:left; width: 200px; text-align: center;">
+		<span class="label">X: </span><input type="button" id="x_zoom_in" value="  +  " onclick="phy.zoomIn('x')" class="bluebtn" /><input type="button" id="x_zoom_out" value="  -  " onclick="phy.zoomOut('x')" class="bluebtn" />
+	</div>
+	<div style="float:left; width: 200px; text-align: right;">
+		<span class="label">Y: </span><input type="button" id="y_zoom_in" value="  +  " onclick="phy.zoomIn('y')" class="bluebtn" /><input type="button" id="y_zoom_out" value="  -  " onclick="phy.zoomOut('y')" class="bluebtn"/>
+	</div>
+
+	 </div>
+
+
+	<div style="clear: both;">&nbsp;</div>
+     <div id="container_data_lineBottom">&nbsp;</div>
+</div> <!-- END of container_rightContent-->
+
+</body>
+</html>
+
