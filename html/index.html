@@ -52,6 +52,11 @@
      <div id="container_data_lineBottom">&nbsp;</div>
 </div> <!-- END of container_rightContent-->
 
+<script type="text/javascript">
+Event.observe(window, Prototype.Browser.IE ? 'load' : 'dom:loaded', function() {
+	phy.load_data('data.txt');
+});
+</script>
 </body>
 </html>
 

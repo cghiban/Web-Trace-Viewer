@@ -250,6 +250,23 @@
 			ctx.fillRect(baseLocationsPositions[3] + 13, baseCallYPos - 10, 0.5, 185);
 		}
 	};
+
+	phy.load_data = function(file) {
+
+		new Ajax.Request(file, {
+			method:'get',	
+			onSuccess: function(transport){
+				var response = transport.responseText || "{'status':'error', 'message':'No response'}";
+				var r = response.evalJSON();
+
+				phy.prepare_draw(r);
+			},
+			onFailure: function(){
+					alert('Something went wrong!\nAborting...');
+				}
+		});
+	
+	};
 	
 })();
 
@@ -263,32 +280,3 @@ function debug(msg) {
 }
 
 
-Event.observe(window, Prototype.Browser.IE ? 'load' : 'dom:loaded', function() {
-	/*
-	var ua = navigator.userAgent.match(/MSIE\s+(\d+)/);
-	if (ua && ua.length > 1 && parseInt(ua[1], 10) < 9) {
-		phy.zoomIn('x');
-	}
-	*/
-
-	new Ajax.Request('data.txt', {
-		method:'get',	
-		//parameters: {'pid': pid, 'accession': accession},
-		onSuccess: function(transport){
-			var response = transport.responseText || "{'status':'error', 'message':'No response'}";
-			var r = response.evalJSON();
-
-			phy.prepare_draw(r);
-		},
-		onFailure: function(){
-				alert('Something went wrong!\nAborting...');
-			}
-	});
-	
-	
-	
-	/*if (ua && ua.length > 1 && parseInt(ua[1], 10) < 9) {
-		setTimeout("phy.zoomOut('x')", 100);
-	}
-	*/
-});

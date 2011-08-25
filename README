@@ -15,3 +15,20 @@ About:
   the "blue line" in the DNA Subway (http://dnasubway.org/). It supports only 
   AB1/ABI trace files.
   Supported browsers: Firefox 3.5+, Safari 4+, Chrome, 4+, IE9+
+
+Usage:
+  Use the perl script from bin/extract_data.pl to extract data from the trace 
+  file:
+
+    bin/extract_data.pl file > data_file.txt
+
+  Then open the html/index.html file and locate and replace this line
+
+    phy.load_data('data.txt');
+
+  with
+
+    phy.load_data('data_file.txt');
+  
+  Reload the page.
+
